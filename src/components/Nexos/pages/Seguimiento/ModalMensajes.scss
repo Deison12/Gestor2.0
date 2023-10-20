@@ -1,0 +1,50 @@
+.grid-messages{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+}
+.btn-message-hover:hover{
+    color: rgb(255, 157, 77);
+}
+
+.font-message{
+    font-size: 16px;
+}
+.font-message-title{
+    font-size: 18px;
+}
+
+.custom-badge {
+  border-radius: 4px; 
+  padding: 4px 8px; 
+  font-weight: bold; 
+  font-size: 14px; 
+}
+
+.custom-badge-warning {
+  @extend .custom-badge; 
+  color: #fff; 
+  background-color: rgb(245 235 0) !important; 
+  color: rgb(119, 119, 115) !important; 
+}
+
+.custom-badge-info {
+  @extend .custom-badge;
+  background-color: rgb(91, 91, 255) !important; 
+  color: #fff; 
+}
+
+.custom-badge-success {
+  @extend .custom-badge;
+  background-color: rgb(127, 247, 127) !important; 
+  color: #fff; 
+}
+
+.custom-badge-danger {
+  @extend .custom-badge;
+  background-color: rgb(253, 69, 69) !important; 
+  color: #fff; 
+}
+.priority1-card {
+  color: red;
+  background-color:#F8D6D6 !important; 
+}

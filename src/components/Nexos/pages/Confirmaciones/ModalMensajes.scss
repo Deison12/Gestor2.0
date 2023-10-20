@@ -1,0 +1,54 @@
+.grid-messages{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+}
+.btn-message-hover:hover{
+    color: rgb(255, 157, 77);
+}
+
+.font-message{
+    font-size: 16px;
+}
+.font-message-title{
+    font-size: 18px;
+}
+
+.custom-badge {
+  border-radius: 4px; 
+  padding: 4px 8px; 
+  font-weight: bold; 
+  font-size: 14px; 
+}
+.custom-badge-warning {
+    font-weight: 456;
+    font-size: 14px;
+    background-color: rgb(240 255 123 / 46%) !important;
+    color: #8c8f00;
+    border: solid 0.1px;
+    border-radius: 5px;
+}
+
+.custom-badge-info {
+  font-weight: bold;
+  font-size: 14px;
+  background-color: rgb(91, 91, 255) !important;
+  color: #fff;
+}
+
+.custom-badge-success {
+  font-weight: 456;
+  font-size: 14px;
+  background-color: #8ce18c75 !important;
+  color: #008f00;
+  border: solid 0.1px;
+  border-radius: 5px;
+}
+
+.custom-badge-danger {
+    font-weight: 456;
+    font-size: 14px;
+    background-color: rgba(255, 134, 123, 0.46) !important;
+    color: rgb(188, 12, 12);
+    border: solid 0.1px;
+    border-radius: 5px;
+}

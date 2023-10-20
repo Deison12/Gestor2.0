@@ -1,0 +1,27 @@
+.grid-cards {
+  display: grid;
+  gap: 1rem;
+  /* fill t omara solo el tamano contando la cantidad de elementos dados */
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  /* fit se ajustara al tamano dependiendo la cantidad de columnas */
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.shadow-drop-bottom-right {
+  animation: shadow-drop-bottom-right 0.4s linear both;
+  cursor: pointer;
+}
+.shadow-drop-bottom-right:hover {
+  transform: scale(1.01);
+}
+.shadow-drop-bottom-right:active {
+  transform: scale(0.9);
+}
+@keyframes shadow-drop-bottom-right {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: 12px 12px 20px -12px rgba(5, 5, 5, 0.55);
+  }
+}

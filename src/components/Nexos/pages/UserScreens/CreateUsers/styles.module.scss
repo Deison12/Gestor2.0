@@ -1,0 +1,14 @@
+.visibility {
+  visibility: visible; /* Hace que el elemento sea visible */
+  /* Otros estilos relacionados con la visibilidad */
+}
+
+.is_visible {
+  display: block; /* Muestra el elemento */
+  /* Otros estilos adicionales cuando el elemento es visible */
+}
+
+.is_hidden {
+  display: none; /* Oculta el elemento */
+  /* Otros estilos adicionales cuando el elemento está oculto */
+}
