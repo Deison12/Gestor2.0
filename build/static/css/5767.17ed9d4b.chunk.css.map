@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/5767.17ed9d4b.chunk.css","mappings":"AACA,+BACE","sources":["components/Nexos/hooks/sweetAlert.module.scss"],"sourcesContent":["/* CustomSweetAlert.css */\n.customClass {\n  color: red; /* Cambia el color del icono de check aquí */\n}"],"names":[],"sourceRoot":""}
