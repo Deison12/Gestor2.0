@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment, useCallback, useEffect, useState } from "react";
 import { Navbar, Dropdown, Button, Form,Col,Row,Modal } from "react-bootstrap";
 import { Scrollbars } from "react-custom-scrollbars-2";
 import { Link,useNavigate } from "react-router-dom";
@@ -62,19 +62,18 @@ const Fullscreen: any = (vale: any) => {
     dispatch(Delete(id))
   }
 
-  const total = () => {
+  const total = useCallback(() => {
     let price = 0;
-    getdata.map((ele:any, k:any) => {
-      price = ele.price * ele.qnty + price
-      return price;
+    getdata.forEach((ele:any) => {
+      price = ele.price * ele.qnty + price;
     });
     setPrice(price);
-    return total;
-  };
+  }, [getdata]);
 
   useEffect(() => {
     total();
-  }, [total])
+  }, [total]);
+
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
     let path = `${process.env.PUBLIC_URL}/`; 
